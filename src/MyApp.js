@@ -3,9 +3,8 @@ import styled from "styled-components";
 import { load } from "surge/lib/util/tables";
 import SearchResults from "./Components/SearchResults";
 import { type } from "os";
-
-export const BASE_URL = "http://localhost:9000" 
-
+import foodData from "./utils/FoodData";
+// export const BASE_URL = "http://localhost:9000" 
 
 
 const MyApp = ()=> {
@@ -22,11 +21,11 @@ const MyApp = ()=> {
         setLoading(true);
     
         try{
-          const response = await fetch(BASE_URL);
-          const json = await response.json();
+          // const response = await fetch(BASE_URL);
+          // const json = await response.json();
           //      console.log(json);
-          setData(json);
-          setFilteredData(json);
+          setData(foodData);
+          setFilteredData(foodData);
           setLoading(false);
           } 
         catch(error) {

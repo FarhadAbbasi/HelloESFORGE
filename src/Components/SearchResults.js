@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BASE_URL } from '../MyApp'
+// import { BASE_URL } from '../MyApp'
+import foodData from '../utils/FoodData'
 import { Button } from '../MyApp'
 
 const SearchResults = ({data: Foods}) => {
@@ -10,7 +11,7 @@ const SearchResults = ({data: Foods}) => {
             { Foods?.map ((food)=> (
             <FoodCard key = {food.name}> 
                 <div className='food_image'>
-                    <img src= {BASE_URL + food.image}  className='image' />
+                    <img src= { food.image}  className='image' />
                 </div>
 
                 <div className='food_info'>
