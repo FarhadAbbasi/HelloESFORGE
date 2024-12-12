@@ -1,11 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-import MyApp from './MyApp';
+import logo from "./logo.svg";
+import "./App.css";
+import MyApp from "./MyApp";
+import Admin from "./Components/Admin";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-        <MyApp/>
+    <div>
+
+      <Routes>
+        <Route path="/" element= {<MyApp /> } />
+        <Route path="admin" element= {<Admin /> } />
+      </Routes>
+      
     </div>
   );
 }

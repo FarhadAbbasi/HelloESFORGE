@@ -55,5 +55,5 @@ const foodData = [
         image: "/images/pancake.png",
         type: "dinner",
     },
-  ];
-  export default foodData
+  ]; 
+  export default foodData 

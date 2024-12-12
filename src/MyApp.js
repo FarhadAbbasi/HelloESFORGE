@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { load } from "surge/lib/util/tables";
+// import { load } from "surge/lib/util/tables";
 import SearchResults from "./Components/SearchResults";
 import { type } from "os";
 import foodData from "./utils/FoodData";
@@ -130,7 +130,7 @@ export default MyApp;
 
 
 
-const MainContainer = styled.div`
+export const MainContainer = styled.div`
 background-color: #323334 ;
 max-width: 2600px;
 min-width: 100%;
